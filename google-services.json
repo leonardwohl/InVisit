@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "289712647301",
+    "firebase_url": "https://invisit-gamescience.firebaseio.com",
+    "project_id": "invisit-gamescience",
+    "storage_bucket": "invisit-gamescience.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289712647301:android:e4718eb3b6a5eb3c",
+        "android_client_info": {
+          "package_name": "com.inVisit.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289712647301-igo9bn1i3a7qrthc850cludrnv11a08r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inVisit.android",
+            "certificate_hash": "b09b0b86137491aedb16fba3031f793e03d93375"
+          }
+        },
+        {
+          "client_id": "289712647301-4k5ramkmv4gt9bs0svodn9urk35afc0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYBteP_zPc1R8RCBsR2LApTk7aydOzUdI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289712647301-4k5ramkmv4gt9bs0svodn9urk35afc0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
