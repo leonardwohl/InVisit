@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4195a8cd412ea96488b8b0a8f51bbde2
+timeCreated: 1512047965
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - geoTransform: {fileID: 1299399302793102, guid: 27387672706a84c49be0015a3d840d34,
+      type: 2}
+  - wrldMap: {instanceID: 0}
+  - GUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
