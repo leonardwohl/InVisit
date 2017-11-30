@@ -19,6 +19,11 @@
 /Assets/Editor Default Resources.meta
 /Assets/Parse.meta
 
+# Credential Files
+/Assets/GoogleService-Info.plist
+/Assets/GoogleService-Info.plist.meta
+/Assets/google-services.json
+/Assets/google-services.json.meta
 
 # Visual Studio 2015 cache directory
 /.vs/
