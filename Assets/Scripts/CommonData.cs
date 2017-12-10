@@ -8,6 +8,8 @@ namespace Invisit
     public class CommonData
     {
 
+        //Common data for game controllers and scripts to use. Most are probably not needed, will trim down/add more as nessesary. 
+
         //public static PrefabList prefabs;
         //public static GameWorld gameWorld;
         public static GameObject mainCamera;

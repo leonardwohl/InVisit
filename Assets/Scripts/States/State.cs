@@ -7,6 +7,8 @@ namespace Invisit.States
     public class State
     {
 
+        //State class for managing game states
+
         public StateManager manager;
         protected GameObject gui;
 

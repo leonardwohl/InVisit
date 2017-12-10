@@ -19,11 +19,10 @@ public class TargetBuilding : MonoBehaviour {
 
     void OnEnable()
     {
-       // var cameraLocation = LatLong.FromDegrees(37.795641, -122.404173);
-       // Api.Instance.CameraApi.MoveTo(cameraLocation, distanceFromInterest: 400, headingDegrees: 0, tiltDegrees: 45);
+       
     }
 
-    void Update()
+    void Update() //Highlights buildings on click, building collision must be on
     {
         if (Input.GetMouseButtonDown(0))
         {

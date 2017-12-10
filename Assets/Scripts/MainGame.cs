@@ -20,6 +20,7 @@ namespace Invisit
 
         void InitializeFirebaseAndStart()
         {
+            //Check firebase dependencies and start game
             Firebase.DependencyStatus dependencyStatus = Firebase.FirebaseApp.CheckDependencies();
 
             if (dependencyStatus != Firebase.DependencyStatus.Available)
@@ -48,6 +49,8 @@ namespace Invisit
         void StartGame()
         {
 
+            //Set up common data and initialize firebase components
+
             Debug.Log("Starting Game");
             CommonData.mainGame = this;
             CommonData.mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -62,6 +65,7 @@ namespace Invisit
         // Update is called once per frame
         void Update()
         {
+            //Frame time not used anywhere yet, will be useful later
             lastFrameTime = currentFrameTime;
             currentFrameTime = Time.realtimeSinceStartup;
             stateManager.Update();

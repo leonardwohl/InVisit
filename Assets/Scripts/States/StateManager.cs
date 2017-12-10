@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace Invisit.States
 {
-    public class StateManager
+    public class StateManager //basic state manager, holds states in stack
     {
         Stack<State> states;
 
-        public StateManager()
+        public StateManager() 
         {
             states = new Stack<State>();
             states.Push(new State());

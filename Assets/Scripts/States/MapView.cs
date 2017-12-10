@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace Invisit.States
 {
-    public class MapView : State
+    public class MapView : State //State for holding the gameworld map
     {
         GameObject map;
         GameObject gameController;

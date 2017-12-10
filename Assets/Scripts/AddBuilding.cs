@@ -5,8 +5,9 @@ using UnityEngine.UI;
 using Wrld;
 using Wrld.Space;
 using Wrld.Resources.Buildings;
-using Invisit;
+
 namespace Invisit {
+
     public class AddBuilding : MonoBehaviour {
 
         public GameObject geoTransform;
@@ -19,25 +20,27 @@ namespace Invisit {
 
         void OnEnable()
         {
-            // var cameraLocation = LatLong.FromDegrees(37.795641, -122.404173);
-            // Api.Instance.CameraApi.MoveTo(cameraLocation, distanceFromInterest: 400, headingDegrees: 0, tiltDegrees: 45);
+            
         }
 
         void Update()
         {
+            //Get mopuse input
+
             if (Input.GetMouseButtonDown(0))
             {
                 mouseDownPosition = Input.mousePosition;
             }
-            if (Input.GetMouseButtonUp(0) && Vector3.Distance(mouseDownPosition, Input.mousePosition) < 5.0f)
+            if (Input.GetMouseButtonUp(0) && Vector3.Distance(mouseDownPosition, Input.mousePosition) < 5.0f) //check if its a click or drag
             {
                 Debug.Log("Mouse Up");
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit)) //raycast uses physics colliders, so terrain physics must be enabled
                 {
+                    //places building at coords from mouse click
                     var viewportPoint = Camera.main.WorldToViewportPoint(hit.point);
                     var latLongAlt = Api.Instance.CameraApi.ViewportToGeographicPoint(viewportPoint, Camera.main);
                     double lat = latLongAlt.GetLatLong().GetLatitude();
@@ -50,7 +53,7 @@ namespace Invisit {
             }
         }
 
-        void PlaceBuilding(LatLongAltitude location)
+        void PlaceBuilding(LatLongAltitude location) //adds building to db cache
         {
             CommonData.firebaseDatabaseManager.GetComponent<FirebaseDatabaseManager>().AddBuildingLocation(location.GetLatLong());
             return;

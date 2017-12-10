@@ -8,6 +8,8 @@ namespace Invisit
 {
     public class SerializableData
     {
+
+        //Data must be serializable for databse entry. Serializable versions of structs are placed here, with methods for transforming them.
         [Serializable]
         public struct LatLonS
         {
